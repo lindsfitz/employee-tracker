@@ -321,6 +321,7 @@ async function addEmployee() {
 
     var roleChoices = await currentRoles();
     var managerList = await currentEmployees();
+    managerList.push('No manager');
 
 
     inquirer.prompt([
